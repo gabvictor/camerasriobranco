@@ -1,0 +1,602 @@
+{
+  "001025": {
+    "lat": -9.972694,
+    "lng": -67.810289,
+    "comentario": "Praça Revolução"
+  },
+  "001030": {
+    "lat": -9.972694,
+    "lng": -67.810289,
+    "comentario": "Praça Revolução"
+  },
+  "001022": {
+    "lat": -9.972439,
+    "lng": -67.809759,
+    "comentario": "Praça Revolução"
+  },
+  "001023": {
+    "lat": -9.972439,
+    "lng": -67.809759,
+    "comentario": "Praça Revolução"
+  },
+  "001305": {
+    "lat": -9.972439,
+    "lng": -67.809759,
+    "comentario": "Praça Revolução"
+  },
+  "001024": {
+    "lat": -9.973169,
+    "lng": -67.80999,
+    "comentario": "Praça Revolução"
+  },
+  "001026": {
+    "lat": -9.974061,
+    "lng": -67.810247,
+    "comentario": "Praça Revolução"
+  },
+  "001270": {
+    "lat": -9.974061,
+    "lng": -67.810247,
+    "comentario": "Praça Revolução"
+  },
+  "001029": {
+    "lat": -9.973103,
+    "lng": -67.809794,
+    "comentario": "Praça Revolução"
+  },
+  "001012": {
+    "lat": -9.973529,
+    "lng": -67.809493,
+    "comentario": "Praça Revolução"
+  },
+  "001013": {
+    "lat": -9.973403,
+    "lng": -67.809532,
+    "comentario": "Praça Revolução"
+  },
+  "001347": {
+    "lat": -9.973615,
+    "lng": -67.80924,
+    "comentario": "Praça Revolução"
+  },
+  "001348": {
+    "lat": -9.973615,
+    "lng": -67.80924,
+    "comentario": "Praça Revolução"
+  },
+  "001349": {
+    "lat": -9.973615,
+    "lng": -67.80924,
+    "comentario": "Praça Revolução"
+  },
+  "001417": {
+    "lat": -9.972809,
+    "lng": -67.809908,
+    "comentario": "Praça Revolução"
+  },
+  "001006": {
+    "lat": -9.976702,
+    "lng": -67.808785,
+    "comentario": "Praça Palácio Rio Branco"
+  },
+  "001016": {
+    "lat": -9.97566,
+    "lng": -67.809492,
+    "comentario": "Praça Palácio Rio Branco"
+  },
+  "001017": {
+    "lat": -9.97566,
+    "lng": -67.809492,
+    "comentario": "Praça Palácio Rio Branco"
+  },
+  "001265": {
+    "lat": -9.975743,
+    "lng": -67.810197,
+    "comentario": "Praça Palácio Rio Branco"
+  },
+  "001266": {
+    "lat": -9.975743,
+    "lng": -67.810197,
+    "comentario": "Praça Palácio Rio Branco"
+  },
+  "001042": {
+    "lat": -9.975288,
+    "lng": -67.810546,
+    "comentario": "Praça Palácio Rio Branco"
+  },
+  "001123": {
+    "lat": -9.97545,
+    "lng": -67.809784,
+    "comentario": "Praça Palácio Rio Branco"
+  },
+  "001007": {
+    "lat": -9.973927,
+    "lng": -67.805881,
+    "comentario": "Calçaldão"
+  },
+  "001008": {
+    "lat": -9.973927,
+    "lng": -67.805881,
+    "comentario": "Calçaldão"
+  },
+  "001014": {
+    "lat": -9.973927,
+    "lng": -67.805881,
+    "comentario": "Calçaldão"
+  },
+  "001009": {
+    "lat": -9.975256,
+    "lng": -67.80555,
+    "comentario": "Calçaldão"
+  },
+  "001010": {
+    "lat": -9.975256,
+    "lng": -67.80555,
+    "comentario": "Calçaldão"
+  },
+  "001058": {
+    "lat": -9.973119,
+    "lng": -67.805343,
+    "comentario": "aquiri"
+  },
+  "001059": {
+    "lat": -9.973119,
+    "lng": -67.805343,
+    "comentario": "aquiri"
+  },
+  "001060": {
+    "lat": -9.973119,
+    "lng": -67.805343,
+    "comentario": "aquiri"
+  },
+  "001061": {
+    "lat": -9.973119,
+    "lng": -67.805343,
+    "comentario": "aquiri"
+  },
+  "001282": {
+    "lat": -10.011248,
+    "lng": -67.79881,
+    "comentario": "rotatoria 364"
+  },
+  "001409": {
+    "lat": -10.011204,
+    "lng": -67.79887,
+    "comentario": "rotatoria 364"
+  },
+  "001289": {
+    "lat": -10.007256,
+    "lng": -67.80216,
+    "comentario": "Via Chico mendes"
+  },
+  "001290": {
+    "lat": -10.007256,
+    "lng": -67.80216,
+    "comentario": "Via Chico mendes"
+  },
+  "001304": {
+    "lat": -10.004677,
+    "lng": -67.78929,
+    "comentario": "ponte sobre o Igarapé da Judia"
+  },
+  "001316": {
+    "lat": -9.961213,
+    "lng": -67.84911,
+    "comentario": "elevado"
+  },
+  "001317": {
+    "lat": -9.961213,
+    "lng": -67.84911,
+    "comentario": "elevado"
+  },
+  "001320": {
+    "lat": -9.963139,
+    "lng": -67.843522,
+    "comentario": "rotatoria ABB"
+  },
+  "001321": {
+    "lat": -9.963139,
+    "lng": -67.843522,
+    "comentario": "rotatoria ABB"
+  },
+  "001302": {
+    "lat": -9.962875,
+    "lng": -67.843125,
+    "comentario": "rotatoria ABB"
+  },
+  "001319": {
+    "lat": -9.986665,
+    "lng": -67.845167,
+    "comentario": "rotatoria Shopping"
+  },
+  "001340": {
+    "lat": -9.969164,
+    "lng": -67.812061,
+    "comentario": "maternidade"
+  },
+  "001341": {
+    "lat": -9.969164,
+    "lng": -67.812061,
+    "comentario": "maternidade"
+  },
+  "001097": {
+    "lat": -9.96881,
+    "lng": -67.812214,
+    "comentario": "maternidade"
+  },
+  "001098": {
+    "lat": -9.969035,
+    "lng": -67.810435,
+    "comentario": "maternidade"
+  },
+  "001342": {
+    "lat": -9.970891,
+    "lng": -67.812521,
+    "comentario": "Av. ceara"
+  },
+  "001343": {
+    "lat": -9.970778,
+    "lng": -67.812283,
+    "comentario": "Av. ceara"
+  },
+  "001406": {
+    "lat": -9.967738,
+    "lng": -67.831,
+    "comentario": "Av. ceara"
+  },
+  "001377": {
+    "lat": -9.967738,
+    "lng": -67.831,
+    "comentario": "Av. ceara"
+  },
+  "001116": {
+    "lat": -9.969992,
+    "lng": -67.819389,
+    "comentario": "Av. ceara"
+  },
+  "001117": {
+    "lat": -9.969451,
+    "lng": -67.818997,
+    "comentario": "Av. ceara"
+  },
+  "001118": {
+    "lat": -9.969992,
+    "lng": -67.819389,
+    "comentario": "Av. ceara"
+  },
+  "001119": {
+    "lat": -9.969153,
+    "lng": -67.818056,
+    "comentario": "Av. ceara"
+  },
+  "001121": {
+    "lat": -9.969258,
+    "lng": -67.815721,
+    "comentario": "Av. ceara"
+  },
+  "001099": {
+    "lat": -9.97136,
+    "lng": -67.808699,
+    "comentario": "Av. ceara"
+  },
+  "001378": {
+    "lat": -9.967738,
+    "lng": -67.831,
+    "comentario": "Av. ceara"
+  },
+  "001345": {
+    "lat": -9.947431,
+    "lng": -67.825076,
+    "comentario": "Rotatoria Horto"
+  },
+  "001346": {
+    "lat": -9.947431,
+    "lng": -67.825076,
+    "comentario": "Rotatoria Horto"
+  },
+  "001160": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001161": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001162": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001163": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001164": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001166": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001169": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001170": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001177": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001219": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001230": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001231": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001232": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001233": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001234": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001235": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001236": {
+    "lat": -9.947267,
+    "lng": -67.825523,
+    "comentario": "Horto"
+  },
+  "001353": {
+    "lat": -9.973615,
+    "lng": -67.80924,
+    "comentario": "Hotel papouco"
+  },
+  "001354": {
+    "lat": -9.973615,
+    "lng": -67.80924,
+    "comentario": "Hotel papouco"
+  },
+  "001355": {
+    "lat": -9.973615,
+    "lng": -67.80924,
+    "comentario": "Hotel papouco"
+  },
+  "001356": {
+    "lat": -9.971531,
+    "lng": -67.810997,
+    "comentario": "centro"
+  },
+  "001357": {
+    "lat": -9.971531,
+    "lng": -67.810997,
+    "comentario": "centro"
+  },
+  "001360": {
+    "lat": -9.972889,
+    "lng": -67.807051,
+    "comentario": "oca"
+  },
+  "001361": {
+    "lat": -9.972889,
+    "lng": -67.807051,
+    "comentario": "oca"
+  },
+  "001364": {
+    "lat": -9.974493,
+    "lng": -67.807136,
+    "comentario": "calçaldão"
+  },
+  "001365": {
+    "lat": -9.974493,
+    "lng": -67.807136,
+    "comentario": "calçaldão"
+  },
+  "001366": {
+    "lat": -9.974493,
+    "lng": -67.807136,
+    "comentario": "calçaldão"
+  },
+  "001371": {
+    "lat": -9.971803,
+    "lng": -67.804984,
+    "comentario": "terminal"
+  },
+  "001372": {
+    "lat": -9.971784,
+    "lng": -67.806494,
+    "comentario": "terminal"
+  },
+  "001373": {
+    "lat": -9.971784,
+    "lng": -67.806494,
+    "comentario": "terminal"
+  },
+  "001069": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001071": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001076": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001077": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001078": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001079": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001080": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001081": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001082": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001084": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001085": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001174": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001206": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001249": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001263": {
+    "lat": -9.972757,
+    "lng": -67.804894,
+    "comentario": "terminal"
+  },
+  "001374": {
+    "lat": -9.977339,
+    "lng": -67.849148,
+    "comentario": "Rotatoria Havan"
+  },
+  "001375": {
+    "lat": -9.977339,
+    "lng": -67.849148,
+    "comentario": "Rotatoria Havan"
+  },
+  "001379": {
+    "lat": -9.978587,
+    "lng": -67.804893,
+    "comentario": "3 ponte"
+  },
+  "001380": {
+    "lat": -9.978587,
+    "lng": -67.804893,
+    "comentario": "3 ponte"
+  },
+  "001047": {
+    "lat": -9.97851,
+    "lng": -67.804558,
+    "comentario": "3 ponte"
+  },
+  "001048": {
+    "lat": -9.97851,
+    "lng": -67.804558,
+    "comentario": "3 ponte"
+  },
+  "001049": {
+    "lat": -9.97745,
+    "lng": -67.805672,
+    "comentario": "3 ponte"
+  },
+  "001051": {
+    "lat": -9.97745,
+    "lng": -67.805672,
+    "comentario": "3 ponte"
+  },
+  "001066": {
+    "lat": -9.978508,
+    "lng": -67.804675,
+    "comentario": "3 ponte"
+  },
+  "001046": {
+    "lat": -9.978508,
+    "lng": -67.804675,
+    "comentario": "3 ponte"
+  },
+  "001412": {
+    "lat": -9.982117,
+    "lng": -67.824814,
+    "comentario": "Av. Sobral"
+  },
+  "001411": {
+    "lat": -9.982117,
+    "lng": -67.824814,
+    "comentario": "Av. Sobral"
+  },
+  "001322": {
+    "lat": -9.959538,
+    "lng": -67.857497,
+    "comentario": "lago do amor"
+  },
+  "001323": {
+    "lat": -9.959538,
+    "lng": -67.857497,
+    "comentario": "lago do amor"
+  },
+  "001324": {
+    "lat": -9.959538,
+    "lng": -67.857497,
+    "comentario": "lago do amor"
+  },
+  "001415": {
+    "lat": -9.960031,
+    "lng": -67.857229,
+    "comentario": "lago do amor"
+  }
+}
