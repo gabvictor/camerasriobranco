@@ -14,30 +14,34 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to bottom, #4CAF50, #f0f2f5);
+            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
         }
 
         header {
             width: 100%;
-            background: #4CAF50;
+            background-color: #4CAF50;
             padding: 20px;
             text-align: center;
             color: white;
-            font-size: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         main {
             width: 100%;
-            max-width: 720px;
+            max-width: 800px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             padding: 20px;
+            margin: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -53,7 +57,7 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: opacity 0.5s ease-in-out;
         }
 
@@ -64,17 +68,18 @@
             opacity: 0;
         }
 
-        #status {
-            font-size: 1rem;
-            color: #555;
-            margin-top: 10px;
+        h2 {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            margin: 0;
+            text-align: center;
         }
 
         #map {
-            height: 300px;
+            height: 400px;
             width: 100%;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         button {
@@ -85,11 +90,12 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 1rem;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
         button:hover {
             background-color: #45a049;
+            transform: translateY(-2px);
         }
 
         button:focus {
@@ -99,6 +105,7 @@
         @media (max-width: 768px) {
             main {
                 padding: 10px;
+                gap: 15px;
             }
         }
     </style>
@@ -135,17 +142,15 @@
 
             const img = document.getElementById('camera');
             const imgNew = document.getElementById('camera-new');
-            const statusDiv = document.getElementById('status');
 
             if (codigos.length > 0) {
                 const codigoAtual = codigos[codigoIndex];
-                const timestamp = new Date().getTime(); // Garantir cache busting
+                const timestamp = new Date().getTime();
                 const imageUrl = `/proxy/camera?code=${codigoAtual}&_=${timestamp}`;
 
                 try {
                     const response = await fetch(imageUrl);
                     if (!response.ok) {
-                        statusDiv.innerText = `Código: ${codigoAtual} - Imagem não encontrada.`;
                         img.style.opacity = 0;
                         codigoIndex = (codigoIndex + 1) % codigos.length;
                         await delay(500);
