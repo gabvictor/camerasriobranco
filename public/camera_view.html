@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atualização de Imagem</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    #camera, #camera-new {
+      max-width: 80%;
+      height: auto;
+      border: 2px solid #333;
+      position: absolute; /* Para sobrepor as imagens */
+      transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade em 500ms */
+    }
+    #camera-new {
+      opacity: 0; /* Inicialmente invisível */
+    }
+  </style>
+</head>
+<body>
+  <!-- Imagem antiga -->
+  <img id="camera" src="https://cameras.riobranco.ac.gov.br/api/camera?code=001406" alt="Imagem da câmera">
+  
+  <!-- Imagem nova (invisível inicialmente) -->
+  <img id="camera-new" alt="Imagem da câmera nova">
+  
+  <script>
+    let imagemEmTransicao = false; // Para evitar trocar a imagem enquanto a transição não termina
+
+    function atualizarImagem() {
+      if (imagemEmTransicao) return; // Se uma transição estiver em andamento, não faz nada
+
+      const img = document.getElementById('camera');
+      const imgNew = document.getElementById('camera-new');
+      const timestamp = new Date().getTime(); // Adiciona um parâmetro para evitar cache
+
+      // Atualiza o src da nova imagem
+      imgNew.src = `https://cameras.riobranco.ac.gov.br/api/camera?code=001406&_=${timestamp}`;
+
+      // Quando a nova imagem estiver carregada
+      imgNew.onload = function() {
+        imagemEmTransicao = true; // Inicia a transição
+
+        // Torna a nova imagem visível gradualmente (inicia com opacidade 0 e aumenta)
+        imgNew.style.opacity = 1;
+
+        // A imagem antiga ainda continua visível enquanto a nova imagem é carregada e visível
+        // Não há necessidade de esconder a imagem antiga, ela permanece visível até que a transição termine
+
+        // Agora, a troca de imagem acontece enquanto a transição ocorre
+        setTimeout(() => {
+          // A nova imagem agora se torna a imagem principal
+          img.src = imgNew.src;
+
+          // Restaura a visibilidade da imagem principal
+          img.style.opacity = 1;
+
+          // Torna a imagem nova invisível novamente
+          imgNew.style.opacity = 0;
+
+          imagemEmTransicao = false; // Permite a próxima troca de imagem
+        }, 500); // Tempo da transição alterado para 500ms
+      };
+    }
+
+    // Atualiza a imagem a cada 1 segundo
+    setInterval(atualizarImagem, 500);
+  </script>
+</body>
+</html>
