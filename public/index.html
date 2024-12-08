@@ -130,47 +130,48 @@
         }
 
         async function atualizarImagem() {
-    if (atualizandoImagem) return;
-    atualizandoImagem = true;
+            if (atualizandoImagem) return;
+            atualizandoImagem = true;
 
-    const img = document.getElementById('camera');
-    const imgNew = document.getElementById('camera-new');
-    const statusDiv = document.getElementById('status');
+            const img = document.getElementById('camera');
+            const imgNew = document.getElementById('camera-new');
+            const statusDiv = document.getElementById('status');
 
-    if (codigos.length > 0) {
-        const codigoAtual = codigos[codigoIndex];
-        const imageUrl = `/proxy/camera?code=${codigoAtual}&rand=${Math.random()}`;
+            if (codigos.length > 0) {
+                const codigoAtual = codigos[codigoIndex];
+                const timestamp = new Date().getTime(); // Garantir cache busting
+                const imageUrl = `/proxy/camera?code=${codigoAtual}&_=${timestamp}`;
 
-        try {
-            const response = await fetch(imageUrl);
-            if (!response.ok) {
-                statusDiv.innerText = `Código: ${codigoAtual} - Imagem não encontrada.`;
-                img.style.opacity = 0;
-                codigoIndex = (codigoIndex + 1) % codigos.length;
-                await delay(500);
-                atualizarImagem();
-                return;
+                try {
+                    const response = await fetch(imageUrl);
+                    if (!response.ok) {
+                        statusDiv.innerText = `Código: ${codigoAtual} - Imagem não encontrada.`;
+                        img.style.opacity = 0;
+                        codigoIndex = (codigoIndex + 1) % codigos.length;
+                        await delay(500);
+                        atualizarImagem();
+                        return;
+                    }
+
+                    const blob = await response.blob();
+                    imgNew.src = URL.createObjectURL(blob);
+
+                    imgNew.onload = function () {
+                        imgNew.style.opacity = 1;
+                        setTimeout(() => {
+                            img.src = imgNew.src;
+                            img.style.opacity = 1;
+                            imgNew.style.opacity = 0;
+                            atualizandoImagem = false;
+                        }, 500);
+                    };
+                } catch (error) {
+                    console.error(`Erro ao verificar a imagem para o código ${codigoAtual}:`, error);
+                }
+
+                setTimeout(atualizarImagem, intervaloAtualizacao);
             }
-
-            const blob = await response.blob();
-            imgNew.src = `${imageUrl}&_=${new Date().getTime()}`;
-            imgNew.onload = function () {
-                imgNew.style.opacity = 1;
-                setTimeout(() => {
-                    img.src = imgNew.src;
-                    img.style.opacity = 1;
-                    imgNew.style.opacity = 0;
-                    atualizandoImagem = false;
-                }, 500);
-            };
-        } catch (error) {
-            console.error(`Erro ao verificar a imagem para o código ${codigoAtual}:`, error);
         }
-
-        setTimeout(atualizarImagem, intervaloAtualizacao);
-    }
-}
-
 
         function buscarCodigos() {
             const codigoURL = obterCodigoDaURL();
