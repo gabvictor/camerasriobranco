@@ -108,6 +108,13 @@
             outline: none;
         }
 
+        .comentario {
+            font-size: 1rem;
+            color: #333;
+            margin-top: 10px;
+            text-align: center;
+        }
+
         @media (max-width: 768px) {
             main {
                 padding: 10px;
@@ -119,12 +126,13 @@
 <body>
     <header>
         Visualização de Câmeras em Tempo Real
-         <p style="font-size: 1rem; margin: 5px 0;">Imagens dinâmicas e mapa interativo</p>
+        <p style="font-size: 1rem; margin: 5px 0;">Imagens dinâmicas e mapa interativo</p>
     </header>
     <main>
         <div class="image-container">
             <img id="camera" alt="Transmissão ao vivo da câmera atual em Rio Branco">
             <img id="camera-new" alt="Transmissão ao vivo da câmera atual em Rio Branco nova">
+          <div class="comentario" id="comentario"></div>            
         </div>
         <h2>Mapa de Câmeras ao Vivo em Rio Branco</h2>
         <div id="map"></div>
@@ -137,6 +145,7 @@
         let codigoIndex = 0;
         let atualizandoImagem = false;
         const intervaloAtualizacao = 1000;
+        let coordenadasCameras = {};
 
         function obterCodigoDaURL() {
             const params = new URLSearchParams(window.location.search);
@@ -190,13 +199,14 @@
             codigos = [codigoURL];
             if (codigos.length > 0) {
                 atualizarImagem();
+                exibirComentario(codigoURL);
             }
         }
 
         async function carregarCoordenadas() {
             try {
                 const response = await fetch('/camera.json');
-                const coordenadasCameras = await response.json();
+                coordenadasCameras = await response.json();
                 inicializarMapa(coordenadasCameras);
             } catch (error) {
                 console.error('Erro ao carregar coordenadas:', error);
@@ -226,6 +236,22 @@
             window.history.pushState({ codigo }, '', newUrl);
             buscarCodigos();
         }
+
+        function exibirComentario(codigo) {
+    const comentario = coordenadasCameras[codigo]?.comentario;
+    const comentarioContainer = document.getElementById('comentario');
+    
+    if (comentario) {
+        comentarioContainer.innerHTML = `
+            <strong>Localização: </strong>${comentario}<br>
+            <strong>Codigo da Câmera: </strong>${codigo}
+        `;
+    } else {
+        comentarioContainer.innerHTML = "<strong>Câmera Não Encontrada.</strong>";
+    }
+}
+
+
 
         function delay(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
